@@ -1,0 +1,69 @@
+LIBRARY	"ImageSearchDLL"
+
+EXPORTS
+
+	; Most used functions
+	TakeScreenshot
+	SetScreehotFPSLimit
+	SaveScreenshot
+	ImageSearch_SAD	
+	ImageSearch_Similar
+	ImageSearch_Multiple_ExactMatch
+	ImageSearch_Multiple_Transparent
+	ImageSearch_Multiple_PixelCount
+	ImageSearch_Multipass_PixelCount
+
+	ApplyColorBitmask
+	DecreaseColorCount
+
+	; OCR related functions
+	OCR_RegisterFont
+	OCR_LoadFontsFromDir
+	OCR_ReadTextLeftToRightSaveUnknownChars
+	KeepColorsMinInRegion
+
+	ImageSearch
+	ResizeScreenshot
+	BlurrImage
+	KeepGradient
+	SetGradientToColor
+	MoveScreenshotToCache
+	ImageSearchOnScreenshot
+	IsAnythingChanced
+	KeepColorSetRest
+	KeepColor3SetBoth
+	GenerateDiffMap
+	SaveDiffMap
+	SaveScreenshotDiffMask
+	ErrodeDiffMap
+	ImageSearchOnScreenshotMasked
+	GetImageSize
+	SetupSimilarSearch
+	SearchSimilarOnScreenshot
+	SearchPiramidOnScreenshot
+	EdgeDetect
+	SaveEdgeMap
+	ReadTextFromScreenshot
+	ImageSearchOnScreenshotBest_SAD
+	ImageSearchOnScreenshotBestTransparent
+	ImageSearchOnScreenshotBest_Transparent_SAD
+	TakeScreenshotDetectUniquePixelsInitial
+	TakeScreenshotKeepUniquePixels
+	TakeScreenshotRemoveDynamicPixels
+	TakeScreenshotRemoveDynamicPixelsAutoPosition
+	SaveScreenshotUniqueFeatures
+	ImageSearchOnScreenshotUniqueFeatures
+
+	ConvertToGrayScale
+	EdgeDetectRobertCross3Channels
+	ConvertToGrayScaleMaxChannel
+	EdgeDetectRobertCross1Channel
+	EdgeBleed
+	EdgeDetectSobel3Channels
+	EdgeKeepLocalMaximaMaximaOnly
+	EdgeCopyOriginalForEdges
+	
+	;Junk Exports. Experimenting with random stuff
+	CycleScreenshots
+	LoadCacheOverScreenshot
+	;CaptureVisibleScreenGetPlayerLabels
